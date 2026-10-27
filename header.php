@@ -11,6 +11,20 @@
 
       gtag('config', 'AW-18366001786');
     </script>
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18366001786/mJiECPCkzasdEPrky7VE',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TV &amp; Internet Deals | Call +1 (877) 412-0493</title>
     <meta name="description" content="Compare TV and internet providers and plans. Call TV &amp; Internet Deals at +1 (877) 412-0493 for help finding service in your area.">

@@ -46,8 +46,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   function callNow() {
-  window.location.href = "tel:+18774120493"; // Replace with your number
-}
+    trackCall("tel:+18774120493");
+  }
+
+  // Report a Google Ads conversion on every tel: click, then dial (fallback if the tag is blocked)
+  function trackCall(url) {
+    var done = false;
+    var go = function () { if (!done) { done = true; window.location.href = url; } };
+    try { gtag_report_conversion(url); } catch (e) {}
+    setTimeout(go, 800);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a) { e.preventDefault(); trackCall(a.getAttribute('href')); }
+  });
 
 function toggleMenu() {
   const nav = document.getElementById('navLinks');
