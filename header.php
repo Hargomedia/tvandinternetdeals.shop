@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18366001786"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18366001786');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TV &amp; Internet Deals | Call +1 (877) 412-0493</title>
     <meta name="description" content="Compare TV and internet providers and plans. Call TV &amp; Internet Deals at +1 (877) 412-0493 for help finding service in your area.">
