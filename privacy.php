@@ -30,7 +30,7 @@
             <p class="pt-1">We may update this Privacy Policy periodically. Any changes will be posted on this page.</p>
 
             <h4 class="pt-2">8. Contact Us</h4>
-            <p class="pt-1">If you have any questions regarding our Privacy Policy, feel free to contact us at <strong>support@tvinternetdeals.shop</strong>.</p>
+            <p class="pt-1">If you have any questions regarding our Privacy Policy, feel free to contact us at <strong>support@tvandinternetdeals.shop</strong>.</p>
         </div>
     </div>
 </div>

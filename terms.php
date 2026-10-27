@@ -65,8 +65,8 @@
             <p class="pt-1">If you have any questions or concerns regarding these Terms &amp; Conditions, please contact us at:</p>
 
             <p class="pt-1"><b>Address </b>: 242 Greene St, New York, NY 10003, USA</p>
-            <p class="pt-1"><b>Email </b>: support@tvinternetdeals.shop</p>
-            <p class="pt-1"><b>Phone </b>: +1 (877) 634-9240 </p>
+            <p class="pt-1"><b>Email </b>: support@tvandinternetdeals.shop</p>
+            <p class="pt-1"><b>Phone </b>: +1 (877) 412-0493 </p>
 
         </div>
     </div>

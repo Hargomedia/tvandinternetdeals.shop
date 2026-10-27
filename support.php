@@ -4,18 +4,33 @@
   <h2 class="contact-title">Get in Touch</h2>
   <div class="contact-wrapper">
     
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+<?php
+$sent = false;
+if ($_SERVER["REQUEST_METHOD"] === "POST" && empty($_POST["website"])) {
+  $n = trim(strip_tags($_POST["name"] ?? ""));
+  $e = filter_var($_POST["email"] ?? "", FILTER_VALIDATE_EMAIL);
+  $m = trim(strip_tags($_POST["message"] ?? ""));
+  if ($n && $e && $m) {
+    $subject = "Website enquiry from " . preg_replace('/[\r\n]+/', ' ', $n);
+    $headers = "From: support@tvandinternetdeals.shop\r\nReply-To: " . $e;
+    $sent = mail("support@tvandinternetdeals.shop", $subject, $m, $headers);
+  }
+}
+?>
+    <form class="contact-form" method="post" action="support.php">
+      <?php if ($sent): ?><p><b>Thank you. We will get back to you shortly.</b></p><?php endif; ?>
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
 
     <div class="contact-info">
       <h3>Contact Information</h3>
       <p>242 Greene St, New York, NY 10003, USA</p>
-      <p>+1 (877) 634-9240</p>
-      <p>✉️ support@tvinternetdeals.shop</p>
+      <p>+1 (877) 412-0493</p>
+      <p>✉️ support@tvandinternetdeals.shop</p>
       
       <!-- Google Map -->
       <div class="map-container">

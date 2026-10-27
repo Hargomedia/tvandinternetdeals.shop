@@ -8,7 +8,7 @@
   <div class="footer-container">
     <div class="footer-about">
       <h3>TV & Internet Deals</h3>
-      <p>Experience top-quality cable TV and internet services at home. Seamless connection, wide channel selection, and customer-focused service to elevate your entertainment experience.</p>
+      <p>An independent service to help you compare cable TV and internet providers and plans available at your address.</p>
     </div>
 
     <div class="footer-links">
@@ -34,18 +34,19 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 TV & Internet Deals. All rights reserved.</p>
+    <p>242 Greene St, New York, NY 10003 | <a href="tel:+18774120493">+1 (877) 412-0493</a> | support@tvandinternetdeals.shop</p>
+    <p>&copy; 2026 TV & Internet Deals. All rights reserved.</p>
   </div>
 </footer>
 
-<a href="tel:+18776349240" class="call-fixed"><i class="fas fa-phone-alt"></i> Call Now : +1 (877) 634-9240</a>
+<a href="tel:+18774120493" class="call-fixed"><i class="fas fa-phone-alt"></i> Call Now : +1 (877) 412-0493</a>
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   function callNow() {
-  window.location.href = "tel:+18776349240"; // Replace with your number
+  window.location.href = "tel:+18774120493"; // Replace with your number
 }
 
 function toggleMenu() {

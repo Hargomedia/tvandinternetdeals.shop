@@ -29,7 +29,7 @@
             <p class="pt-1">TV & Internet Deals reserves the right to update this Refund Policy at any time. Any changes will be posted on this page for transparency.</p>
 
             <h4 class="pt-2">8. Contact Us</h4>
-            <p class="pt-1">For questions or assistance regarding this Refund Policy, contact us at <strong>support@tvinternetdeals.shop</strong>.</p>
+            <p class="pt-1">For questions or assistance regarding this Refund Policy, contact us at <strong>support@tvandinternetdeals.shop</strong>.</p>
         </div>
     </div>
 </div>
